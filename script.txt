@@ -93,15 +93,15 @@ void loop() {
   } else if (screen == 9) {
     lcdPrintAll("U got an award!", 
                 "<Y By a car? N>");
-    nextScreen(8, 19);
+    nextScreen(19, 10);
   } else if (screen == 10) {
     lcdPrintAll("Ur money stolen", 
                 "<Y Suicied?  N>");
     nextScreen(11, 7);
   } else if (screen == 11) {
     lcdPrintAll("You are died!  ", 
-                "<-  RESTART  ->");
-    nextScreen(0, 0);
+                "<-     OK    ->");
+    nextScreen(21, 21);
   } else if (screen == 12) {
     lcdPrintAll("Hi," + myName + "!Go to the",
                 "<Y  cinema?  N>");
@@ -138,6 +138,10 @@ void loop() {
     lcdPrintAll("You began to tra", 
                 "vel by car! OK->");
     nextScreen(8, 8);
+  } else if (screen == 21) {
+    lcdPrintAll("It was a dream! ", 
+                "Just a dream! ->");
+    nextScreen(5, 5);
   } 
 
 // Чтобы не обрабатывать нажатие 100500 раз
